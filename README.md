@@ -21,7 +21,7 @@ Repository structure and implementation were completed according to the assessme
 Created a complete 4-page portfolio website including Home, About, Projects, and Contact pages.  
 Used semantic HTML5 elements, navigation menus, tables, forms, images, external links, and multiple HTML color attributes across the pages.
 
-🔗 Live Demo:https://amareshpaithacs.github.io/html-assessment-amaresh/task1
+🔗 Live Demo: https://amareshpaithacs.github.io/html-assessment-amaresh/task1
 
 ---
 
@@ -29,9 +29,21 @@ Used semantic HTML5 elements, navigation menus, tables, forms, images, external 
 Developed a navigation page demonstrating anchor links, table of contents, back-to-top links, relative links, download links, email links, telephone links, and image maps.  
 Implemented internal and external linking techniques using pure HTML only.
 
-🔗 Live Demo:https://amareshpaithacs.github.io/html-assessment-amaresh/task2/navigation.html
+🔗 Live Demo: https://amareshpaithacs.github.io/html-assessment-amaresh/task2/navigation.html
 
 ---
+
+
+---
+
+## Task 3 – Complex Table Design with Nested Structures
+Created advanced HTML tables using rowspan, colspan, nested tables, table sections, alignment attributes, and formatted content.  
+Added images, links, and text formatting inside table cells while maintaining accessibility and proper structure.
+
+🔗 Live Demo: https://yourusername.github.io/html-assessment-amaresh/task3/tables.html
+
+---
+
 
 
 
