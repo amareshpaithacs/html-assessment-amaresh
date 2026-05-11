@@ -1,0 +1,48 @@
+HTML Fundamentals - Quick Notes
+================================
+
+Author: Chaluvadi Naga Amaresh
+Course: BE CSE - Sathyabama Institute of Science and Technology
+
+HTML TAGS TO REMEMBER:
+-----------------------
+
+1. Basic Structure:
+   <!DOCTYPE html>
+   <html> <head> <body>
+
+2. Text Tags:
+   <h1> to <h6> - Headings
+   <p> - Paragraph
+   <b> - Bold
+   <i> - Italic
+
+3. Link Tags:
+   <a href="page.html"> - Internal link
+   <a href="https://..."> - External link
+   <a href="mailto:..."> - Email link
+   <a href="tel:..."> - Phone link
+   <a href="file.pdf" download> - Download link
+
+4. Image Tag:
+   <img src="image.jpg" alt="description" width="300">
+
+5. Image Map:
+   <img usemap="#mapname">
+   <map name="mapname">
+   <area shape="rect" coords="..." href="...">
+   <area shape="circle" coords="..." href="...">
+   <area shape="poly" coords="..." href="...">
+
+6. List Tags:
+   <ul> - Unordered list
+   <ol> - Ordered list
+   <li> - List item
+
+7. Table Tags:
+   <table> <tr> <th> <td>
+
+8. Form Tags:
+   <form> <input> <label> <select> <textarea>
+
+This file is part of the HTML Fundamentals Assessment - Task 2
