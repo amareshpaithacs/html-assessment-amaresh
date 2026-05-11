@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tables | Amaresh</title>
+    <link rel="icon" type="image/x-icon" href="../task1/images/favicon.png">
+</head>
+
+<body bgcolor="#f5f5f5">
+
+    <!-- Page Header -->
+    <table width="100%" cellpadding="10" bgcolor="#1a237e">
+        <tr>
+            <td align="center">
+                <font color="white" size="6"><b>Task 3 - Complex Table Design</b></font><br>
+                <font color="#c5cae9">This page shows different types of HTML tables with all required attributes.</font>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Navigation Bar -->
+    <table width="100%" cellpadding="7" bgcolor="#424242">
+        <tr>
+            <td>
+                <font color="white">
+                    &nbsp;&nbsp;
+                    <a href="../task1/index.html"><font color="white">Home</font></a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="../task2/pages/about.html"><font color="white">About</font></a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="../task2/navigation.html"><font color="white">Navigation</font></a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="../task2/pages/contact.html"><font color="white">Contact</font></a>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: MAIN COMPARISON TABLE                             -->
+    <!-- ============================================================ -->
+
+    <h2 align="center">Hosting Plans Comparison Table</h2>
+    <p align="center">Compare our four hosting plans and choose the right one for you.</p>
+
+    <table border="2" cellpadding="10" cellspacing="3" align="center" width="90%">
+
+        <!-- thead section - header row -->
+        <thead>
+            <tr bgcolor="#0d47a1">
+                <th scope="col" align="center"><font color="white">Features</font></th>
+                <th scope="col" align="center"><font color="white">Basic Plan</font></th>
+                <th scope="col" align="center"><font color="white">Standard Plan</font></th>
+                <th scope="col" align="center"><font color="white">Premium Plan</font></th>
+                <th scope="col" align="center"><font color="white">Enterprise Plan</font></th>
+            </tr>
+        </thead>
+
+        <!-- tbody section - data rows -->
+        <tbody>
+
+            <!-- Row 1 - Storage -->
+            <tr bgcolor="#e3f2fd">
+                <th scope="row" align="left" valign="middle"><b>Storage</b></th>
+                <td align="center" valign="middle">5 GB</td>
+                <td align="center" valign="middle">20 GB</td>
+                <td align="center" valign="middle">100 GB</td>
+                <td align="center" valign="middle">Unlimited</td>
+            </tr>
+
+            <!-- Row 2 - Users -->
+            <tr bgcolor="#ffffff">
+                <th scope="row" align="left" valign="middle"><b>Users</b></th>
+                <td align="center" valign="middle">1 User</td>
+                <td align="center" valign="middle">5 Users</td>
+                <td align="center" valign="middle">20 Users</td>
+                <td align="center" valign="middle">Unlimited</td>
+            </tr>
+
+            <!-- Row 3 - Support (rowspan example - Premium and Enterprise share same support) -->
+            <tr bgcolor="#e3f2fd">
+                <th scope="row" align="left" valign="middle"><b>Support</b></th>
+                <td align="center" valign="middle">Email Only</td>
+                <td align="center" valign="middle">Email + Chat</td>
+                <td align="center" valign="middle" rowspan="2" bgcolor="#bbdefb">
+                    <b>24/7 Priority Support</b><br>
+                    <font size="2">(applies to both Support and Backup rows)</font>
+                </td>
+                <td align="center" valign="middle">Dedicated Manager</td>
+            </tr>
+
+            <!-- Row 4 - Backup (rowspan from previous row covers Premium column) -->
+            <tr bgcolor="#ffffff">
+                <th scope="row" align="left" valign="middle"><b>Backup</b></th>
+                <td align="center" valign="middle">No Backup</td>
+                <td align="center" valign="middle">Weekly</td>
+                <td align="center" valign="middle">Daily</td>
+            </tr>
+
+            <!-- Row 5 - Security -->
+            <tr bgcolor="#e3f2fd">
+                <th scope="row" align="left" valign="middle"><b>Security</b></th>
+                <td align="center" valign="middle">Basic SSL</td>
+                <td align="center" valign="middle">SSL + Firewall</td>
+                <td align="center" valign="middle">Advanced SSL</td>
+                <td align="center" valign="middle">Enterprise Grade</td>
+            </tr>
+
+            <!-- Row 6 - Database with image in cell -->
+            <tr bgcolor="#ffffff">
+                <th scope="row" align="left" valign="middle"><b>Database</b></th>
+                <td align="center" valign="middle">
+                    <img src="images/no-icon.png"
+                         alt="Not available icon for Basic plan database"
+                         width="20"
+                         height="20">
+                    <br>Not Included
+                </td>
+                <td align="center" valign="middle">1 Database</td>
+                <td align="center" valign="middle">5 Databases</td>
+                <td align="center" valign="middle">Unlimited DB</td>
+            </tr>
+
+            <!-- Row 7 - Analytics with link in cell -->
+            <tr bgcolor="#e3f2fd">
+                <th scope="row" align="left" valign="middle"><b>Analytics</b></th>
+                <td align="center" valign="top">Not Available</td>
+                <td align="center" valign="top">Basic Reports</td>
+                <td align="center" valign="top">
+                    Advanced Reports<br>
+                    <a href="https://analytics.google.com" target="_blank">
+                        <font size="2">View Sample</font>
+                    </a>
+                </td>
+                <td align="center" valign="top">
+                    Full Analytics<br>
+                    <a href="https://analytics.google.com" target="_blank">
+                        <font size="2">View Sample</font>
+                    </a>
+                </td>
+            </tr>
+
+            <!-- Row 8 - Price with nested table inside Premium cell -->
+            <tr bgcolor="#ffffff">
+                <th scope="row" align="left" valign="top"><b>Price</b></th>
+                <td align="center" valign="middle">
+                    <b><font size="4">Free</font></b><br>
+                    <font size="2">No credit card needed</font>
+                </td>
+                <td align="center" valign="middle">
+                    <b><font size="4">&#8377;299/mo</font></b><br>
+                    <font size="2">Billed monthly</font>
+                </td>
+
+                <!-- Nested table inside Premium price cell -->
+                <td align="center" valign="top">
+                    <b>Premium Pricing</b><br><br>
+                    <table border="1" cellpadding="5" cellspacing="1" bgcolor="#e8f5e9">
+                        <tr bgcolor="#2e7d32">
+                            <th align="center"><font color="white" size="2">Duration</font></th>
+                            <th align="center"><font color="white" size="2">Price</font></th>
+                        </tr>
+                        <tr bgcolor="#f1f8e9">
+                            <td align="center"><font size="2">Monthly</font></td>
+                            <td align="center"><font size="2">&#8377;799</font></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><font size="2">6 Months</font></td>
+                            <td align="center"><font size="2">&#8377;699</font></td>
+                        </tr>
+                        <tr bgcolor="#f1f8e9">
+                            <td align="center"><font size="2">Yearly</font></td>
+                            <td align="center"><font size="2">&#8377;599</font></td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td align="center" valign="middle">
+                    <b><font size="4">Custom</font></b><br>
+                    <font size="2">Contact sales team</font>
+                </td>
+            </tr>
+
+            <!-- Row 9 - Formatted text cell using b, i, u tags -->
+            <tr bgcolor="#e3f2fd">
+                <th scope="row" align="left" valign="middle"><b>Best For</b></th>
+                <td align="center" valign="middle">
+                    <i>Students &amp; Beginners</i>
+                </td>
+                <td align="center" valign="middle">
+                    <b>Small Businesses</b>
+                </td>
+                <td align="center" valign="middle">
+                    <u>Growing Companies</u>
+                </td>
+                <td align="center" valign="middle">
+                    <b><i><u>Large Enterprises</u></i></b>
+                </td>
+            </tr>
+
+        </tbody>
+
+        <!-- tfoot section - colspan example spanning all 5 columns -->
+        <tfoot>
+            <tr bgcolor="rgb(33, 33, 33)">
+                <td colspan="5" align="center" valign="middle">
+                    <font color="white">
+                        <b>All plans include a 7-day free trial. No hidden charges. Cancel anytime.</b>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        Contact:
+                        <a href="mailto:chaluvadiamaresh1@gmail.com">
+                            <font color="#90caf9">chaluvadiamaresh1@gmail.com</font>
+                        </a>
+                    </font>
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: SIMPLE SKILLS TABLE                               -->
+    <!-- ============================================================ -->
+
+    <h2 align="center">My Skills Table</h2>
+    <p align="center">A simple table showing my technical skills and proficiency levels.</p>
+
+    <table border="1" cellpadding="8" cellspacing="2" align="center" width="65%">
+
+        <thead>
+            <tr bgcolor="#4a148c">
+                <th scope="col" align="center"><font color="white">Skill</font></th>
+                <th scope="col" align="center"><font color="white">Category</font></th>
+                <th scope="col" align="center"><font color="white">Level</font></th>
+                <th scope="col" align="center"><font color="white">Experience</font></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr bgcolor="#f3e5f5">
+                <th scope="row" align="left">HTML</th>
+                <td align="center">Web Development</td>
+                <td align="center"><b>Good</b></td>
+                <td align="right">1 Year</td>
+            </tr>
+            <tr bgcolor="#ffffff">
+                <th scope="row" align="left">CSS</th>
+                <td align="center">Web Development</td>
+                <td align="center"><b>Good</b></td>
+                <td align="right">1 Year</td>
+            </tr>
+            <tr bgcolor="#f3e5f5">
+                <th scope="row" align="left">Python</th>
+                <td align="center">Programming</td>
+                <td align="center"><b>Intermediate</b></td>
+                <td align="right">1.5 Years</td>
+            </tr>
+            <tr bgcolor="#ffffff">
+                <th scope="row" align="left">JavaScript</th>
+                <td align="center">Web Development</td>
+                <td align="center"><i>Beginner</i></td>
+                <td align="right">6 Months</td>
+            </tr>
+            <tr bgcolor="#f3e5f5">
+                <th scope="row" align="left">MySQL</th>
+                <td align="center">Database</td>
+                <td align="center"><i>Beginner</i></td>
+                <td align="right">6 Months</td>
+            </tr>
+            <tr bgcolor="#ffffff">
+                <th scope="row" align="left">GitHub</th>
+                <td align="center">Version Control</td>
+                <td align="center"><b>Intermediate</b></td>
+                <td align="right">1 Year</td>
+            </tr>
+            <tr bgcolor="#f3e5f5">
+                <th scope="row" align="left">ReactJS</th>
+                <td align="center">Frontend Framework</td>
+                <td align="center"><i>Beginner</i></td>
+                <td align="right">3 Months</td>
+            </tr>
+            <tr bgcolor="#ffffff">
+                <th scope="row" align="left">Bootstrap</th>
+                <td align="center">CSS Framework</td>
+                <td align="center"><i>Beginner</i></td>
+                <td align="right">4 Months</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr bgcolor="#4a148c">
+                <td colspan="4" align="center">
+                    <font color="white">Total Skills Listed: 8 &nbsp;|&nbsp; All skills learned during BE CSE at Sathyabama Institute</font>
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3: PROJECT TABLE WITH ROWSPAN AND COLSPAN            -->
+    <!-- ============================================================ -->
+
+    <h2 align="center">My Projects Table</h2>
+    <p align="center">A table showing beginner projects with rowspan and colspan examples.</p>
+
+    <table border="2" cellpadding="10" cellspacing="2" align="center" width="85%">
+
+        <thead>
+            <tr bgcolor="#bf360c">
+                <th scope="col" align="center"><font color="white">Project Name</font></th>
+                <th scope="col" align="center"><font color="white">Technology</font></th>
+                <th scope="col" align="center"><font color="white">Status</font></th>
+                <th scope="col" align="center"><font color="white">Link</font></th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <!-- colspan example: project group heading spanning all 4 columns -->
+            <tr bgcolor="#ffccbc">
+                <td colspan="4" align="center" valign="middle">
+                    <b><u>Web Development Projects</u></b>
+                </td>
+            </tr>
+
+            <tr bgcolor="#fff3e0">
+                <th scope="row" align="left" valign="top">Personal Blog Site</th>
+                <td align="center" valign="top">HTML, CSS</td>
+                <td align="center" valign="top">
+                    <font color="green"><b>Completed</b></font>
+                </td>
+                <td align="center" valign="top">
+                    <a href="https://github.com" target="_blank">GitHub Link</a>
+                </td>
+            </tr>
+
+            <tr bgcolor="#ffffff">
+                <th scope="row" align="left" valign="top">Online Grocery Website</th>
+                <td align="center" valign="top">HTML, CSS, JS</td>
+                <td align="center" valign="top">
+                    <font color="green"><b>Completed</b></font>
+                </td>
+                <td align="center" valign="top">
+                    <a href="https://github.com" target="_blank">GitHub Link</a>
+                </td>
+            </tr>
+
+            <tr bgcolor="#fff3e0">
+                <th scope="row" align="left" valign="top">Registration Form</th>
+                <td align="center" valign="top">HTML</td>
+
+                <!-- rowspan example: this status cell spans 2 rows (Registration + Portfolio) -->
+                <td align="center" valign="middle" rowspan="2" bgcolor="#ffe0b2">
+                    <font color="blue"><b>In Progress</b></font><br>
+                    <font size="2">(Both projects)</font>
+                </td>
+
+                <td align="center" valign="top">
+                    <a href="https://github.com" target="_blank">GitHub Link</a>
+                </td>
+            </tr>
+
+            <tr bgcolor="#ffffff">
+                <th scope="row" align="left" valign="top">Portfolio Website</th>
+                <td align="center" valign="top">HTML, CSS</td>
+                <td align="center" valign="top">
+                    <a href="../task1/index.html">View Portfolio</a>
+                </td>
+            </tr>
+
+            <!-- Another colspan group heading -->
+            <tr bgcolor="#ffccbc">
+                <td colspan="4" align="center" valign="middle">
+                    <b><u>Python &amp; Database Projects</u></b>
+                </td>
+            </tr>
+
+            <tr bgcolor="#fff3e0">
+                <th scope="row" align="left" valign="top">Online Payment Fraud Detection</th>
+                <td align="center" valign="top">Python, ML</td>
+                <td align="center" valign="top">
+                    <font color="green"><b>Completed</b></font>
+                </td>
+                <td align="center" valign="top">
+                    <a href="https://github.com" target="_blank">GitHub Link</a>
+                </td>
+            </tr>
+
+            <tr bgcolor="#ffffff">
+                <th scope="row" align="left" valign="top">Student Record System</th>
+                <td align="center" valign="top">Python, MySQL</td>
+                <td align="center" valign="top">
+                    <font color="green"><b>Completed</b></font>
+                </td>
+                <td align="center" valign="top">
+                    <a href="https://github.com" target="_blank">GitHub Link</a>
+                </td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr bgcolor="rgb(69, 90, 100)">
+                <td colspan="4" align="center" valign="middle">
+                    <font color="white">Total Projects: 6 &nbsp;|&nbsp; All projects are part of my BE CSE internship and college work</font>
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 4: SIMPLE SCHEDULE / TIMETABLE                       -->
+    <!-- ============================================================ -->
+
+    <h2 align="center">Weekly Study Schedule</h2>
+    <p align="center">A simple timetable table to show different align and valign examples.</p>
+
+    <table border="1" cellpadding="10" cellspacing="0" align="center" width="80%">
+
+        <thead>
+            <tr bgcolor="#006064">
+                <th scope="col" align="center"><font color="white">Time</font></th>
+                <th scope="col" align="center"><font color="white">Monday</font></th>
+                <th scope="col" align="center"><font color="white">Wednesday</font></th>
+                <th scope="col" align="center"><font color="white">Friday</font></th>
+                <th scope="col" align="center"><font color="white">Saturday</font></th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr bgcolor="#e0f7fa">
+                <th scope="row" align="center" valign="middle">9 AM - 11 AM</th>
+                <td align="left" valign="top">
+                    HTML Practice<br>
+                    <font size="2"><i>Building web pages</i></font>
+                </td>
+                <td align="center" valign="middle">Python Coding</td>
+                <td align="right" valign="bottom">
+                    JavaScript<br>
+                    <font size="2">Basic concepts</font>
+                </td>
+                <td align="center" valign="middle">
+                    <b>Project Work</b>
+                </td>
+            </tr>
+
+            <tr bgcolor="#ffffff">
+                <th scope="row" align="center" valign="middle">11 AM - 1 PM</th>
+                <td align="left" valign="top">CSS Styling</td>
+                <td align="center" valign="middle">MySQL Practice</td>
+                <td align="right" valign="bottom">ReactJS Basics</td>
+
+                <!-- rowspan: Saturday project work spans 2 time slots -->
+                <td align="center" valign="middle" rowspan="2" bgcolor="#b2ebf2">
+                    <b>Review &amp; Test</b><br>
+                    <font size="2">All topics combined</font>
+                </td>
+            </tr>
+
+            <tr bgcolor="#e0f7fa">
+                <th scope="row" align="center" valign="middle">2 PM - 4 PM</th>
+                <td align="left" valign="top">GitHub Practice</td>
+                <td align="center" valign="middle">Bootstrap</td>
+                <td align="right" valign="bottom">Problem Solving</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr bgcolor="#004d40">
+                <td colspan="5" align="center">
+                    <font color="white">Study schedule for Chaluvadi Naga Amaresh - BE CSE Sathyabama Institute</font>
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <br>
+    <hr>
+    <br>
+    <!-- Page Footer -->
+    <table width="100%" cellpadding="10" bgcolor="#212121">
+        <tr>
+            <td align="center">
+                <font color="white">
+                    &copy; 2026 Chaluvadi Naga Amaresh &nbsp;|&nbsp;
+                    <a href="mailto:amaresh@paithacs.com">
+                        <font color="#90caf9">amaresh@paithacs.com</font>
+                    </a>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
