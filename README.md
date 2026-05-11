@@ -40,7 +40,7 @@ Implemented internal and external linking techniques using pure HTML only.
 Created advanced HTML tables using rowspan, colspan, nested tables, table sections, alignment attributes, and formatted content.  
 Added images, links, and text formatting inside table cells while maintaining accessibility and proper structure.
 
-🔗 Live Demo: https://yourusername.github.io/html-assessment-amaresh/task3/tables.html
+🔗 Live Demo: https://amareshpaithacs.github.io/html-assessment-amaresh/task3/tables.html
 
 ---
 
