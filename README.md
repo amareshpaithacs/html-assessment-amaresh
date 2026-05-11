@@ -21,7 +21,7 @@ Repository structure and implementation were completed according to the assessme
 Created a complete 4-page portfolio website including Home, About, Projects, and Contact pages.  
 Used semantic HTML5 elements, navigation menus, tables, forms, images, external links, and multiple HTML color attributes across the pages.
 
-🔗 Live Demo:https://amareshpaithacs.github.io/html-assessment-amaresh/Task1
+🔗 Live Demo:https://amareshpaithacs.github.io/html-assessment-amaresh/task1
 
 ---
 
