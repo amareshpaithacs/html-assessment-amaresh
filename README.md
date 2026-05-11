@@ -23,4 +23,16 @@ Used semantic HTML5 elements, navigation menus, tables, forms, images, external 
 
 🔗 Live Demo:https://amareshpaithacs.github.io/html-assessment-amaresh/Task1
 
+---
+
+## Task 2 – Advanced Link Implementation & Navigation Patterns
+Developed a navigation page demonstrating anchor links, table of contents, back-to-top links, relative links, download links, email links, telephone links, and image maps.  
+Implemented internal and external linking techniques using pure HTML only.
+
+🔗 Live Demo:  
+https://yourusername.github.io/html-assessment-amaresh/task2/
+
+---
+
+
 
