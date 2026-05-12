@@ -56,6 +56,17 @@ Implemented fieldsets, legends, datalist, dropdowns, placeholders, required vali
 
 ---
 
+---
+
+## Task 5 – Advanced Image Gallery
+Designed an image gallery with multiple image formats, figure captions, linked images, picture elements, and responsive image sources.  
+Used descriptive alt text, title attributes, spacing attributes, and image alignment features.
+
+🔗 Live Demo: https://amareshpaithacs.github.io/html-assessment-amaresh/task5/gallery.html
+
+---
+
+
 
 
 
