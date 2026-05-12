@@ -52,8 +52,7 @@ https://amareshpaithacs.github.io/html-assessment-amaresh/task3/tables.html
 Built a complex registration form using multiple HTML5 input types and validation attributes.  
 Implemented fieldsets, legends, datalist, dropdowns, placeholders, required validations, readonly fields, and disabled elements.
 
-🔗 Live Demo:  
-https://amareshpaithacs.github.io/html-assessment-amaresh/task4/form.html
+🔗 Live Demo: https://amareshpaithacs.github.io/html-assessment-amaresh/task4/form.html
 
 ---
 
