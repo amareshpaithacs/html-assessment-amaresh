@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form | Amaresh</title>
+    <link rel="icon" type="image/x-icon" href="../task1/images/favicon.png">
+</head>
+
+<body bgcolor="#f0f4f8">
+
+    <!-- Page Header -->
+    <table width="100%" cellpadding="12" bgcolor="#1b5e20">
+        <tr>
+            <td align="center">
+                <font color="white" size="6"><b>Comprehensive Form Development with Validation</b></font>
+                <br>
+                <font color="#c8e6c9" size="3">Chaluvadi Naga Amaresh&nbsp;|&nbsp;BE CSE</font>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Navigation Bar -->
+    <table width="100%" cellpadding="7" bgcolor="#424242">
+        <tr>
+            <td>
+                <font color="white">
+                    &nbsp;&nbsp;
+                    <a href="../task1/index.html"><font color="white">Home</font></a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="../task2/pages/about.html"><font color="white">About</font></a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="../task2/navigation.html"><font color="white">Navigation</font></a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="../task3/tables.html"><font color="white">Tables</font></a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="../task2/pages/contact.html"><font color="white">Contact</font></a>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1 align="center">Task 4 - Internship Registration Form</h1>
+    <p align="center">Please fill in all the required details carefully. Fields marked with * are required.</p>
+
+    <hr>
+    <br>
+
+    <!-- ============================================================ -->
+    <!-- MAIN REGISTRATION FORM                                        -->
+    <!-- ============================================================ -->
+
+    <form action="#" method="post" autocomplete="on">
+
+        <!-- ============================================================ -->
+        <!-- FIELDSET 1: Personal Details                                  -->
+        <!-- ============================================================ -->
+
+        <table width="72%" align="center" cellpadding="4">
+            <tr>
+                <td>
+
+                    <fieldset>
+                        <legend><b>&nbsp;Personal Details&nbsp;</b></legend>
+
+                        <br>
+
+                        <table width="100%" cellpadding="8">
+
+                            <!-- Full Name - text, autofocus, required, minlength, maxlength -->
+                            <tr>
+                                <td width="38%" align="right" valign="middle">
+                                    <label for="fullname"><b>Full Name: *</b></label>
+                                </td>
+                                <td>
+                                    <input type="text"
+                                           id="fullname"
+                                           name="fullname"
+                                           placeholder="Enter your full name"
+                                           autofocus
+                                           required
+                                           minlength="3"
+                                           maxlength="60"
+                                           autocomplete="name"
+                                           size="35">
+                                </td>
+                            </tr>
+
+                            <!-- Email - email, required -->
+                            <tr bgcolor="#f9f9f9">
+                                <td align="right" valign="middle">
+                                    <label for="email"><b>Email Address: *</b></label>
+                                </td>
+                                <td>
+                                    <input type="email"
+                                           id="email"
+                                           name="email"
+                                           placeholder="example@email.com"
+                                           required
+                                           autocomplete="email"
+                                           size="35">
+                                </td>
+                            </tr>
+
+                            <!-- Password - password, required, pattern, minlength -->
+                            <tr>
+                                <td align="right" valign="middle">
+                                    <label for="password"><b>Password: *</b></label>
+                                </td>
+                                <td>
+                                    <input type="password"
+                                           id="password"
+                                           name="password"
+                                           placeholder="Minimum 8 characters"
+                                           required
+                                           minlength="8"
+                                           maxlength="20"
+                                           pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                           autocomplete="new-password"
+                                           size="35">
+                                    <br>
+                                    <font size="2" color="gray">Include uppercase, lowercase and a number.</font>
+                                </td>
+                            </tr>
+
+                            <!-- Phone - tel, required, pattern -->
+                            <tr bgcolor="#f9f9f9">
+                                <td align="right" valign="middle">
+                                    <label for="phone"><b>Phone Number: *</b></label>
+                                </td>
+                                <td>
+                                    <input type="tel"
+                                           id="phone"
+                                           name="phone"
+                                           placeholder="+91XXXXXXXXXX"
+                                           required
+                                           pattern="[+][9][1][0-9]{10}"
+                                           autocomplete="tel"
+                                           size="35">
+                                    <br>
+                                    <font size="2" color="gray">Format: +91 followed by 10 digits. Example: +917799582309</font>
+                                </td>
+                            </tr>
+
+                            <!-- Date of Birth - date, min, max -->
+                            <tr>
+                                <td align="right" valign="middle">
+                                    <label for="dob"><b>Date of Birth:</b></label>
+                                </td>
+                                <td>
+                                    <input type="date"
+                                           id="dob"
+                                           name="dob"
+                                           min="1995-01-01"
+                                           max="2007-12-31"
+                                           autocomplete="bday">
+                                </td>
+                            </tr>
+
+                            <!-- Preferred Interview Time - time, min, max -->
+                            <tr bgcolor="#f9f9f9">
+                                <td align="right" valign="middle">
+                                    <label for="interviewtime"><b>Preferred Interview Time:</b></label>
+                                </td>
+                                <td>
+                                    <input type="time"
+                                           id="interviewtime"
+                                           name="interviewtime"
+                                           min="09:00"
+                                           max="18:00">
+                                    <br>
+                                    <font size="2" color="gray">Office hours: 9 AM to 6 PM only</font>
+                                </td>
+                            </tr>
+
+                            <!-- Portfolio URL - url -->
+                            <tr>
+                                <td align="right" valign="middle">
+                                    <label for="website"><b>Portfolio Website:</b></label>
+                                </td>
+                                <td>
+                                    <input type="url"
+                                           id="website"
+                                           name="website"
+                                           placeholder="https://yourportfolio.com"
+                                           autocomplete="off"
+                                           size="35">
+                                </td>
+                            </tr>
+
+                            <!-- Student ID - readonly example -->
+                            <tr bgcolor="#f9f9f9">
+                                <td align="right" valign="middle">
+                                    <label for="studentid"><b>Student ID:</b></label>
+                                </td>
+                                <td>
+                                    <input type="text"
+                                           id="studentid"
+                                           name="studentid"
+                                           value="SAT-CSE-2024-001"
+                                           readonly
+                                           size="25">
+                                    &nbsp;
+                                    <font size="2" color="gray">(auto-assigned, read only)</font>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <br>
+
+                    </fieldset>
+
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- ============================================================ -->
+        <!-- FIELDSET 2: Skills and Academic Details                       -->
+        <!-- ============================================================ -->
+
+        <table width="72%" align="center" cellpadding="4">
+            <tr>
+                <td>
+
+                    <fieldset>
+                        <legend><b>&nbsp;Skills and Academic Details&nbsp;</b></legend>
+
+                        <br>
+
+                        <table width="100%" cellpadding="8">
+
+                            <!-- College name with datalist - minimum 5 suggestions -->
+                            <tr>
+                                <td width="38%" align="right" valign="middle">
+                                    <label for="college"><b>College Name: *</b></label>
+                                </td>
+                                <td>
+                                    <input type="text"
+                                           id="college"
+                                           name="college"
+                                           placeholder="Type your college name"
+                                           list="college-suggestions"
+                                           required
+                                           size="40"
+                                           autocomplete="off">
+
+                                    <!-- datalist with 5+ suggestions -->
+                                    <datalist id="college-suggestions">
+                                        <option value="Sathyabama Institute of Science and Technology">
+                                        <option value="VIT University, Vellore">
+                                        <option value="SRM Institute of Science and Technology">
+                                        <option value="Anna University, Chennai">
+                                        <option value="Amrita School of Engineering">
+                                        <option value="Loyola College, Chennai">
+                                    </datalist>
+                                </td>
+                            </tr>
+
+                            <!-- Year of Study - number, min, max, step -->
+                            <tr bgcolor="#f9f9f9">
+                                <td align="right" valign="middle">
+                                    <label for="yearstudy"><b>Year of Study: *</b></label>
+                                </td>
+                                <td>
+                                    <input type="number"
+                                           id="yearstudy"
+                                           name="yearstudy"
+                                           placeholder="1 to 4"
+                                           min="1"
+                                           max="4"
+                                           step="1"
+                                           required
+                                           size="10">
+                                </td>
+                            </tr>
+
+                            <!-- Department dropdown - select with optgroup -->
+                            <tr>
+                                <td align="right" valign="middle">
+                                    <label for="department"><b>Department: *</b></label>
+                                </td>
+                                <td>
+                                    <select id="department" name="department" required>
+                                        <option value="">-- Select Your Department --</option>
+                                        <optgroup label="Engineering Departments">
+                                            <option value="cse">Computer Science and Engineering</option>
+                                            <option value="ece">Electronics and Communication</option>
+                                            <option value="eee">Electrical and Electronics</option>
+                                            <option value="mech">Mechanical Engineering</option>
+                                        </optgroup>
+                                        <optgroup label="Science Departments">
+                                            <option value="bca">BCA - Computer Applications</option>
+                                            <option value="bsc-cs">BSc Computer Science</option>
+                                            <option value="bsc-it">BSc Information Technology</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- Preferred Technology dropdown - second select with optgroup -->
+                            <tr bgcolor="#f9f9f9">
+                                <td align="right" valign="middle">
+                                    <label for="preferred-tech"><b>Preferred Technology: *</b></label>
+                                </td>
+                                <td>
+                                    <select id="preferred-tech" name="preferred-tech" required>
+                                        <option value="">-- Select Preferred Technology --</option>
+                                        <optgroup label="Web Development">
+                                            <option value="html-css">HTML and CSS</option>
+                                            <option value="javascript">JavaScript</option>
+                                            <option value="reactjs">ReactJS</option>
+                                        </optgroup>
+                                        <optgroup label="Programming Languages">
+                                            <option value="python">Python</option>
+                                            <option value="java">Java</option>
+                                            <option value="c-cpp">C / C++</option>
+                                        </optgroup>
+                                        <optgroup label="Database">
+                                            <option value="mysql">MySQL</option>
+                                            <option value="mongodb">MongoDB</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- Known Technologies - checkboxes (minimum 3) -->
+                            <tr>
+                                <td align="right" valign="top">
+                                    <label><b>Known Technologies:</b></label>
+                                </td>
+                                <td valign="top">
+                                    <input type="checkbox" id="ck-html" name="tech" value="html" checked>
+                                    <label for="ck-html">HTML</label>
+                                    &nbsp;&nbsp;
+                                    <input type="checkbox" id="ck-python" name="tech" value="python" checked>
+                                    <label for="ck-python">Python</label>
+                                    &nbsp;&nbsp;
+                                    <input type="checkbox" id="ck-js" name="tech" value="javascript">
+                                    <label for="ck-js">JavaScript</label>
+                                    &nbsp;&nbsp;
+                                    <input type="checkbox" id="ck-css" name="tech" value="css">
+                                    <label for="ck-css">CSS</label>
+                                    &nbsp;&nbsp;
+                                    <input type="checkbox" id="ck-mysql" name="tech" value="mysql">
+                                    <label for="ck-mysql">MySQL</label>
+                                </td>
+                            </tr>
+
+                            <!-- Skill Level - radio buttons (minimum 3 in same group) -->
+                            <tr bgcolor="#f9f9f9">
+                                <td align="right" valign="top">
+                                    <label><b>Skill Level: *</b></label>
+                                </td>
+                                <td valign="top">
+                                    <input type="radio" id="beginner" name="skill-level" value="beginner" required>
+                                    <label for="beginner">Beginner</label>
+                                    &nbsp;&nbsp;
+                                    <input type="radio" id="intermediate" name="skill-level" value="intermediate">
+                                    <label for="intermediate">Intermediate</label>
+                                    &nbsp;&nbsp;
+                                    <input type="radio" id="advanced" name="skill-level" value="advanced">
+                                    <label for="advanced">Advanced</label>
+                                </td>
+                            </tr>
+
+                            <!-- Referral Code - disabled field example -->
+                            <tr>
+                                <td align="right" valign="middle">
+                                    <label for="referral"><b>Referral Code:</b></label>
+                                </td>
+                                <td>
+                                    <input type="text"
+                                           id="referral"
+                                           name="referral"
+                                           value="NOT-AVAILABLE"
+                                           disabled
+                                           size="20">
+                                    &nbsp;
+                                    <font size="2" color="gray">(referral program is closed right now)</font>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <br>
+
+                    </fieldset>
+
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- ============================================================ -->
+        <!-- FIELDSET 3: Preferences                                       -->
+        <!-- ============================================================ -->
+
+        <table width="72%" align="center" cellpadding="4">
+            <tr>
+                <td>
+
+                    <fieldset>
+                        <legend><b>&nbsp;Preferences&nbsp;</b></legend>
+
+                        <br>
+
+                        <table width="100%" cellpadding="8">
+
+                            <!-- Profile Color - color input -->
+                            <tr>
+                                <td width="38%" align="right" valign="middle">
+                                    <label for="profilecolor"><b>Favourite Color:</b></label>
+                                </td>
+                                <td>
+                                    <input type="color"
+                                           id="profilecolor"
+                                           name="profilecolor"
+                                           value="#1b5e20">
+                                    &nbsp;
+                                    <font size="2" color="gray">Pick your favourite color</font>
+                                </td>
+                            </tr>
+
+                            <!-- Experience months - range input, min, max, step -->
+                            <tr bgcolor="#f9f9f9">
+                                <td align="right" valign="middle">
+                                    <label for="experience"><b>Experience Level (0-5 years):</b></label>
+                                </td>
+                                <td>
+                                    <input type="range"
+                                           id="experience"
+                                           name="experience"
+                                           min="0"
+                                           max="5"
+                                           step="1"
+                                           value="1">
+                                    &nbsp;
+                                    <font size="2" color="gray">Drag to select years of experience</font>
+                                </td>
+                            </tr>
+
+                            <!-- Internship type - radio buttons (3 in one group) -->
+                            <tr>
+                                <td align="right" valign="top">
+                                    <label><b>Internship Mode: *</b></label>
+                                </td>
+                                <td valign="top">
+                                    <input type="radio" id="remote" name="intern-mode" value="remote" required>
+                                    <label for="remote">Remote</label>
+                                    &nbsp;&nbsp;
+                                    <input type="radio" id="onsite" name="intern-mode" value="onsite">
+                                    <label for="onsite">On-site</label>
+                                    &nbsp;&nbsp;
+                                    <input type="radio" id="hybrid" name="intern-mode" value="hybrid">
+                                    <label for="hybrid">Hybrid</label>
+                                </td>
+                            </tr>
+
+                            <!-- Resume upload - file input -->
+                            <tr bgcolor="#f9f9f9">
+                                <td align="right" valign="top">
+                                    <label for="resume"><b>Upload Resume:</b></label>
+                                </td>
+                                <td>
+                                    <input type="file"
+                                           id="resume"
+                                           name="resume"
+                                           accept=".pdf,.doc,.docx">
+                                    <br>
+                                    <font size="2" color="gray">Accepted formats: PDF, DOC, DOCX only</font>
+                                </td>
+                            </tr>
+
+                            <!-- About yourself - textarea, rows, cols, maxlength -->
+                            <tr>
+                                <td align="right" valign="top">
+                                    <label for="about"><b>About Yourself: *</b></label>
+                                </td>
+                                <td>
+                                    <textarea id="about"
+                                              name="about"
+                                              rows="6"
+                                              cols="45"
+                                              placeholder="Write a short introduction about yourself, your skills and your goals..."
+                                              required
+                                              minlength="20"
+                                              maxlength="500"
+                                              autocomplete="off"></textarea>
+                                    <br>
+                                    <font size="2" color="gray">Maximum 500 characters allowed.</font>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <br>
+
+                    </fieldset>
+
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- ============================================================ -->
+        <!-- Submit and Reset Buttons                                      -->
+        <!-- ============================================================ -->
+
+        <table width="72%" align="center" cellpadding="12" bgcolor="#e8f5e9" border="1">
+            <tr>
+                <td align="center">
+                    <font color="red" size="2"><b>* All fields marked with * are required before submitting.</b></font>
+                    <br><br>
+                    <input type="submit" value="Submit Application">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="Clear All Fields">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- Quick summary table of all input types -->
+    <h2 align="center">All Input Types Used in This Form</h2>
+
+    <table border="1" cellpadding="8" cellspacing="2" align="center" width="72%">
+
+        <thead>
+            <tr bgcolor="#1b5e20">
+                <th align="center"><font color="white">Input Type</font></th>
+                <th align="center"><font color="white">Field Name</font></th>
+                <th align="center"><font color="white">Validation Attribute Used</font></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr bgcolor="#f1f8e9">
+                <td align="left">text</td>
+                <td align="left">Full Name, College, Student ID</td>
+                <td align="left">required, minlength, maxlength</td>
+            </tr>
+            <tr>
+                <td align="left">email</td>
+                <td align="left">Email Address</td>
+                <td align="left">required</td>
+            </tr>
+            <tr bgcolor="#f1f8e9">
+                <td align="left">password</td>
+                <td align="left">Password</td>
+                <td align="left">required, pattern (regex), minlength, maxlength</td>
+            </tr>
+            <tr>
+                <td align="left">tel</td>
+                <td align="left">Phone Number</td>
+                <td align="left">required, pattern</td>
+            </tr>
+            <tr bgcolor="#f1f8e9">
+                <td align="left">number</td>
+                <td align="left">Year of Study</td>
+                <td align="left">min, max, step, required</td>
+            </tr>
+            <tr>
+                <td align="left">date</td>
+                <td align="left">Date of Birth</td>
+                <td align="left">min, max</td>
+            </tr>
+            <tr bgcolor="#f1f8e9">
+                <td align="left">time</td>
+                <td align="left">Preferred Interview Time</td>
+                <td align="left">min, max</td>
+            </tr>
+            <tr>
+                <td align="left">url</td>
+                <td align="left">Portfolio Website</td>
+                <td align="left">autocomplete</td>
+            </tr>
+            <tr bgcolor="#f1f8e9">
+                <td align="left">color</td>
+                <td align="left">Favourite Color</td>
+                <td align="left">value (default)</td>
+            </tr>
+            <tr>
+                <td align="left">range</td>
+                <td align="left">Experience Level</td>
+                <td align="left">min, max, step</td>
+            </tr>
+            <tr bgcolor="#f1f8e9">
+                <td align="left">file</td>
+                <td align="left">Resume Upload</td>
+                <td align="left">accept</td>
+            </tr>
+            <tr>
+                <td align="left">checkbox</td>
+                <td align="left">Known Technologies (5 options)</td>
+                <td align="left">checked (default)</td>
+            </tr>
+            <tr bgcolor="#f1f8e9">
+                <td align="left">radio</td>
+                <td align="left">Skill Level (3), Internship Mode (3)</td>
+                <td align="left">required</td>
+            </tr>
+            <tr>
+                <td align="left">textarea</td>
+                <td align="left">About Yourself</td>
+                <td align="left">rows, cols, maxlength, required, minlength</td>
+            </tr>
+            <tr bgcolor="#f1f8e9">
+                <td align="left">select + optgroup</td>
+                <td align="left">Department, Preferred Technology</td>
+                <td align="left">required</td>
+            </tr>
+            <tr>
+                <td align="left">datalist</td>
+                <td align="left">College Name (6 suggestions)</td>
+                <td align="left">list attribute</td>
+            </tr>
+            <tr bgcolor="#f1f8e9">
+                <td align="left">disabled</td>
+                <td align="left">Referral Code</td>
+                <td align="left">disabled</td>
+            </tr>
+            <tr>
+                <td align="left">readonly</td>
+                <td align="left">Student ID</td>
+                <td align="left">readonly</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr bgcolor="rgb(27, 94, 32)">
+                <td colspan="3" align="center">
+                    <font color="white">
+                        Total: 18 elements used &nbsp;|&nbsp;
+                        Task 4 - Chaluvadi Naga Amaresh &nbsp;|&nbsp;
+                        BE CSE, Sathyabama university
+                    </font>
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <br>
+
+    <!-- Page Footer -->
+    <table width="100%" cellpadding="10" bgcolor="#212121">
+        <tr>
+            <td align="center">
+                <font color="white">
+                    &copy; 2026 Chaluvadi Naga Amaresh &nbsp;|&nbsp;
+                    <a href="mailto:amaresh@paithacs.com">
+                        <font color="#a5d6a7">amaresh@paithacs.com</font>
+                    </a>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
