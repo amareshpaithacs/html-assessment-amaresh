@@ -45,5 +45,16 @@ Added images, links, and text formatting inside table cells while maintaining ac
 ---
 
 
+## Task 4 – Comprehensive Form Development
+Built a complex registration form using multiple HTML5 input types and validation attributes.  
+Implemented fieldsets, legends, datalist, dropdowns, placeholders, required validations, readonly fields, and disabled elements.
+
+🔗 Live Demo:  
+https://yourusername.github.io/html-assessment-amaresh/task4/
+
+---
+
+
+
 
 
