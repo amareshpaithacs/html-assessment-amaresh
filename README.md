@@ -66,6 +66,17 @@ Used descriptive alt text, title attributes, spacing attributes, and image align
 
 ---
 
+---
+
+## Task 6 – Semantic HTML Blog Layout
+Created a semantic blog page using proper HTML5 structure elements like header, nav, article, section, aside, and footer.  
+Included quotations, definition lists, metadata tags, formatted text elements, and proper heading hierarchy.
+
+🔗 Live Demo:https://amareshpaithacs.github.io/html-assessment-amaresh/task6/blog.html
+
+---
+
+
 
 
 
