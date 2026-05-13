@@ -86,6 +86,40 @@ Demonstrated proper use of metadata and global HTML attributes.
 
 ---
 
+---
+
+## Task 8 – Documentation Website with Accessibility
+Built a complete multi-page documentation website with accessibility features such as ARIA attributes, breadcrumb navigation, skip links, search forms, and expandable content sections.  
+Implemented consistent navigation and semantic structure across all pages.
+
+🔗 Live Demo: https://amareshpaithacs.github.io/html-assessment-amaresh/task8/index.html
+
+---
+
+# Technologies Used
+- HTML5
+- Semantic HTML
+- Pure HTML Attributes
+- Git & GitHub
+
+---
+
+# Special Notes / Challenges
+- Maintaining the project using only pure HTML without CSS or JavaScript was challenging.
+- Ensuring all pages followed semantic HTML structure and accessibility guidelines required careful implementation.
+- Cross-page navigation and validation were tested according to the assessment requirements.
+
+---
+
+# Validation
+All HTML files were created according to the assessment instructions and validated using the W3C Markup Validation Service.
+
+---
+
+# GitHub Repository
+https://github.com/amareshpaithacs/html-assessment-amaresh
+
+
 
 
 
