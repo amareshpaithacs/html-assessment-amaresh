@@ -72,7 +72,17 @@ Used descriptive alt text, title attributes, spacing attributes, and image align
 Created a semantic blog page using proper HTML5 structure elements like header, nav, article, section, aside, and footer.  
 Included quotations, definition lists, metadata tags, formatted text elements, and proper heading hierarchy.
 
-🔗 Live Demo:https://amareshpaithacs.github.io/html-assessment-amaresh/task6/blog.html
+🔗 Live Demo: https://amareshpaithacs.github.io/html-assessment-amaresh/task6/blog.html
+
+---
+
+---
+
+## Task 7 – HTML Attributes & Metadata Showcase
+Implemented advanced HTML attributes including data attributes, draggable elements, tabindex, spellcheck, hidden elements, translate attributes, and favicon links.  
+Demonstrated proper use of metadata and global HTML attributes.
+
+🔗 Live Demo: https://amareshpaithacs.github.io/html-assessment-amaresh/task7/attributes.html
 
 ---
 
