@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chaluvadi Naga Amaresh">
+    <meta name="description" content="Getting started guide for HTML beginners by Chaluvadi Naga Amaresh.">
+    <meta name="keywords" content="HTML getting started, beginner, VS Code, web development, Amaresh">
+    <title>Getting Started - Documentation - Amaresh</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../task7/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../task7/icons/favicon-32x32.png">
+</head>
+
+<body bgcolor="#fafafa">
+
+    <!-- Skip to content link -->
+    <a href="#main-content">Skip to main content</a>
+
+    <!-- HEADER -->
+    <header role="banner">
+        <table width="100%" cellpadding="14" bgcolor="##cc6600">
+            <tr>
+                <td align="center">
+                    <h1><font color="white">HTML Learning Documentation</font></h1>
+                    <font color="#c8e6c9" size="3">
+                        By Chaluvadi Naga Amaresh &nbsp;|&nbsp; BE CSE 
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav role="navigation" aria-label="Main site navigation">
+        <table width="100%" cellpadding="8" bgcolor="#424242">
+            <tr>
+                <td>
+                    <ul>
+                        <li style="display:inline">
+                            <a href="index.html"><font color="white">Home</font></a>
+                        </li>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <li style="display:inline">
+                            <a href="getting-started.html"><font color="white"><b>Getting Started</b></font></a>
+                        </li>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <li style="display:inline">
+                            <a href="reference.html"><font color="white">Reference</font></a>
+                        </li>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <li style="display:inline">
+                            <a href="examples.html"><font color="white">Examples</font></a>
+                        </li>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <li style="display:inline">
+                            <a href="sitemap.html"><font color="white">Sitemap</font></a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <br>
+
+    <!-- Breadcrumb -->
+    <table width="90%" align="center" cellpadding="5">
+        <tr>
+            <td>
+                <b>You are here:</b> &nbsp;
+                <ol>
+                    <li style="display:inline"><a href="index.html">Home</a></li>
+                    &nbsp;&gt;&nbsp;
+                    <li style="display:inline"><a href="index.html">Documentation</a></li>
+                    &nbsp;&gt;&nbsp;
+                    <li style="display:inline">Getting Started</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Search form -->
+    <table width="90%" align="center" cellpadding="8">
+        <tr>
+            <td>
+                <form action="#" method="get" role="search" aria-label="Search documentation">
+                    <label for="search-input"><b>Search Documentation:</b></label>
+                    &nbsp;
+                    <input type="search"
+                           id="search-input"
+                           name="q"
+                           placeholder="Type to search..."
+                           size="35"
+                           aria-describedby="search-hint">
+                    &nbsp;
+                    <input type="submit" value="Search">
+                    <br>
+                    <small id="search-hint">Search for HTML topics, tags, or examples.</small>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content" role="main" aria-labelledby="gs-heading">
+
+        <table width="90%" align="center" cellpadding="10">
+            <tr>
+                <td width="70%" valign="top">
+
+                    <h2 id="gs-heading">Getting Started with HTML</h2>
+
+                    <p>
+                        This page will help you set up your environment and write your very first HTML page.
+                        I followed these same steps when I started my internship at Paithacs.
+                    </p>
+
+                    <hr>
+
+                    <h3>Step 1: Install a Code Editor</h3>
+
+                    <p>
+                        The best code editor for beginners is <b>Visual Studio Code (VS Code)</b>.
+                        It is free, lightweight, and works on Windows, Mac, and Linux. Download it from
+                        <a href="https://code.visualstudio.com" target="_blank">code.visualstudio.com</a>.
+                    </p>
+
+                    <hr>
+
+                    <h3>Step 2: Create Your First HTML File</h3>
+
+                    <p>
+                        Open VS Code, create a new file, and save it as <b>index.html</b>.
+                        Type the basic HTML structure shown below:
+                    </p>
+
+                    <table border="1" cellpadding="10" bgcolor="#f5f5f5" width="90%">
+                        <tr>
+                            <td>
+                                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;This is my first HTML page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                                </pre>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <h3>Step 3: Open in Browser</h3>
+
+                    <p>
+                        Right-click your <b>index.html</b> file and select <b>"Open with Live Server"</b>
+                        (if you installed the Live Server extension) or just double-click it to open in Chrome.
+                        You should see <b>Hello World!</b> on the page.
+                    </p>
+
+                    <hr>
+
+                    <h3>Step 4: Learn Basic Tags</h3>
+
+                    <p>
+                        Once your first page is working, start learning these basic tags one by one:
+                    </p>
+
+                    <table border="1" cellpadding="8" cellspacing="2" width="90%">
+                        <tr bgcolor="#1b5e20">
+                            <th align="left"><font color="white">Tag</font></th>
+                            <th align="left"><font color="white">What it does</font></th>
+                        </tr>
+                        <tr bgcolor="#f1f8e9">
+                            <td>&lt;h1&gt; to &lt;h6&gt;</td>
+                            <td>Headings - h1 is biggest, h6 is smallest</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;p&gt;</td>
+                            <td>Paragraph of text</td>
+                        </tr>
+                        <tr bgcolor="#f1f8e9">
+                            <td>&lt;a&gt;</td>
+                            <td>Hyperlink to another page or URL</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;img&gt;</td>
+                            <td>Displays an image on the page</td>
+                        </tr>
+                        <tr bgcolor="#f1f8e9">
+                            <td>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</td>
+                            <td>Unordered and ordered lists</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;table&gt;</td>
+                            <td>Creates a table with rows and columns</td>
+                        </tr>
+                        <tr bgcolor="#f1f8e9">
+                            <td>&lt;form&gt;</td>
+                            <td>Creates a form for user input</td>
+                        </tr>
+                    </table>
+
+                    <br>
+                    <hr>
+
+                    <h3>Expandable Tips for Beginners</h3>
+
+                    <!-- details 1 -->
+                    <details>
+                        <summary><b>Tip 1: Always validate your HTML</b></summary>
+                        <p>
+                            Use the free W3C Markup Validation Service at
+                            <a href="https://validator.w3.org" target="_blank">validator.w3.org</a>
+                            to check your HTML for errors. All HTML files in this assessment must
+                            validate with zero errors.
+                        </p>
+                    </details>
+
+                    <br>
+
+                    <!-- details 2 -->
+                    <details>
+                        <summary><b>Tip 2: Use proper indentation</b></summary>
+                        <p>
+                            Always indent your HTML code using 4 spaces or 1 tab consistently.
+                            Good indentation makes your code easy to read and debug.
+                            VS Code auto-formats code if you press <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>.
+                        </p>
+                    </details>
+
+                    <br>
+
+                    <!-- details 3 -->
+                    <details>
+                        <summary><b>Tip 3: Use semantic tags</b></summary>
+                        <p>
+                            Use semantic HTML elements like &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;,
+                            &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;, and &lt;footer&gt; instead
+                            of just using &lt;div&gt; for everything. Semantic tags improve accessibility
+                            and make your code more meaningful.
+                        </p>
+                    </details>
+
+                    <br>
+                    <hr>
+
+                    <p>
+                        Next: <a href="reference.html">HTML Tag Reference &rarr;</a>
+                    </p>
+
+                </td>
+
+                <!-- Sidebar -->
+                <td width="30%" valign="top" bgcolor="#f0f4f0">
+
+                    <table width="95%" align="center" border="1" cellpadding="10" bgcolor="#e3f2fd">
+                        <tr>
+                            <td>
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="reference.html">HTML Reference</a></li>
+                                    <li><a href="examples.html">Code Examples</a></li>
+                                    <li><a href="sitemap.html">Sitemap</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <table width="95%" align="center" border="1" cellpadding="10" bgcolor="#fff3e0">
+                        <tr>
+                            <td>
+                                <h3>Setup Checklist</h3>
+                                <ul>
+                                    <li>Install VS Code</li>
+                                    <li>Install Live Server extension</li>
+                                    <li>Create index.html file</li>
+                                    <li>Write basic HTML structure</li>
+                                    <li>Open in browser</li>
+                                    <li>Validate on W3C</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+
+    </main>
+
+    <br>
+    <hr>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo" aria-label="Page footer">
+        <table width="100%" cellpadding="12" bgcolor="#212121">
+            <tr>
+                <td align="center">
+                    <address>
+                        <font color="#a5d6a7">
+                            <a href="mailto:amaresh@paithacs.com"><font color="#80cbc4">amaresh@paithacs.com</font></a>
+                            &nbsp;|&nbsp;
+                            <a href="tel:+917799582309"><font color="#80cbc4">+91 7799582309</font></a><br>
+                        </font>
+                    </address>
+                    <br>
+                    <font color="#9e9e9e" size="2">
+                        &copy; 2026 Chaluvadi Naga Amaresh &nbsp;|&nbsp;
+                        Last updated: <time datetime="2024-05-20">20th May 2024</time>
+                        &nbsp;|&nbsp;
+                        <a href="https://github.com/amaresh" target="_blank"><font color="#80cbc4">GitHub</font></a>
+                        &nbsp;|&nbsp;
+                        <a href="https://www.linkedin.com/in/naga-amaresh-chaluvadi-986539251/" target="_blank"><font color="#80cbc4">LinkedIn</font></a>
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+</html>

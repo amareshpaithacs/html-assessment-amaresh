@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chaluvadi Naga Amaresh">
+    <meta name="description" content="HTML code examples by Chaluvadi Naga Amaresh from internship assessment tasks.">
+    <meta name="keywords" content="HTML examples, code, beginner, assessment, Amaresh">
+    <title>Examples - Documentation - Amaresh</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../task7/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../task7/icons/favicon-32x32.png">
+</head>
+
+<body bgcolor="#fafafa">
+
+    <!-- Skip to content -->
+    <a href="#main-content">Skip to main content</a>
+
+    <!-- HEADER -->
+    <header role="banner">
+        <table width="100%" cellpadding="14" bgcolor="##ff8800">
+            <tr>
+                <td align="center">
+                    <h1><font color="white">HTML Learning Documentation</font></h1>
+                    <font color="#c8e6c9" size="3">
+                        By Chaluvadi Naga Amaresh &nbsp;|&nbsp; BE CSE
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav role="navigation" aria-label="Main site navigation">
+        <table width="100%" cellpadding="8" bgcolor="#424242">
+            <tr>
+                <td>
+                    <ul>
+                        <li style="display:inline">
+                            <a href="index.html"><font color="white">Home</font></a>
+                        </li>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <li style="display:inline">
+                            <a href="getting-started.html"><font color="white">Getting Started</font></a>
+                        </li>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <li style="display:inline">
+                            <a href="reference.html"><font color="white">Reference</font></a>
+                        </li>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <li style="display:inline">
+                            <a href="examples.html"><font color="white"><b>Examples</b></font></a>
+                        </li>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        <li style="display:inline">
+                            <a href="sitemap.html"><font color="white">Sitemap</font></a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <br>
+
+    <!-- Breadcrumb -->
+    <table width="90%" align="center" cellpadding="5">
+        <tr>
+            <td>
+                <b>You are here:</b> &nbsp;
+                <ol>
+                    <li style="display:inline"><a href="index.html">Home</a></li>
+                    &nbsp;&gt;&nbsp;
+                    <li style="display:inline"><a href="index.html">Documentation</a></li>
+                    &nbsp;&gt;&nbsp;
+                    <li style="display:inline">Examples</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Search form -->
+    <table width="90%" align="center" cellpadding="8">
+        <tr>
+            <td>
+                <form action="#" method="get" role="search" aria-label="Search documentation">
+                    <label for="search-input"><b>Search Documentation:</b></label>
+                    &nbsp;
+                    <input type="search"
+                           id="search-input"
+                           name="q"
+                           placeholder="Type to search..."
+                           size="35"
+                           aria-describedby="search-hint">
+                    &nbsp;
+                    <input type="submit" value="Search">
+                    <br>
+                    <small id="search-hint">Search for HTML topics, tags, or examples.</small>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content" role="main" aria-labelledby="ex-heading">
+
+        <table width="90%" align="center" cellpadding="10">
+            <tr>
+                <td width="70%" valign="top">
+
+                    <h2 id="ex-heading">Code Examples from My Assessment</h2>
+
+                    <p>
+                        This page shows real code examples that I wrote during the HTML Fundamentals Assessment.
+                        These are from Tasks 1 through 7.
+                    </p>
+
+                    <hr>
+
+                    <h3>Example 1 - Basic HTML Page Structure</h3>
+                    <p>This is the basic structure I used for every page in the assessment:</p>
+
+                    <table border="1" cellpadding="10" bgcolor="#f5f5f5" width="90%">
+                        <tr>
+                            <td>
+                                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Name | Amaresh&lt;/title&gt;
+    &lt;link rel="icon" href="images/favicon.ico"&gt;
+&lt;/head&gt;
+&lt;body bgcolor="#fafafa"&gt;
+    &lt;header&gt;...&lt;/header&gt;
+    &lt;nav&gt;...&lt;/nav&gt;
+    &lt;main&gt;...&lt;/main&gt;
+    &lt;footer&gt;...&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                                </pre>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+                    <hr>
+
+                    <h3>Example 2 - HTML Table with Rowspan and Colspan</h3>
+                    <p>This example is from Task 3 - Complex Table Design:</p>
+
+                    <table border="1" cellpadding="8" cellspacing="2" width="90%" bgcolor="#fff">
+                        <thead>
+                            <tr bgcolor="##ff8800">
+                                <th align="center"><font color="white">Feature</font></th>
+                                <th align="center"><font color="white">Basic</font></th>
+                                <th align="center"><font color="white">Premium</font></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr bgcolor="#f1f8e9">
+                                <td>Storage</td>
+                                <td align="center">5 GB</td>
+                                <td align="center">100 GB</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Support</td>
+                                <td align="center">Email only</td>
+                                <td align="center">24/7 Chat</td>
+                            </tr>
+                            <tr bgcolor="#f1f8e9">
+                                <td align="center" colspan="2"><i>Support details vary by plan</i></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr bgcolor="#424242">
+                                <td colspan="3" align="center"><font color="white">Comparison table example with rowspan and colspan</font></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <br>
+                    <hr>
+
+                    <h3>Example 3 - HTML Form with Validation</h3>
+                    <p>This example shows basic form elements from Task 4:</p>
+
+                    <table border="1" cellpadding="10" bgcolor="#f5f5f5" width="90%">
+                        <tr>
+                            <td>
+                                <pre>
+&lt;form action="#" method="post"&gt;
+
+    &lt;fieldset&gt;
+        &lt;legend&gt;Personal Details&lt;/legend&gt;
+
+        &lt;label for="name"&gt;Full Name:&lt;/label&gt;
+        &lt;input type="text"
+               id="name"
+               name="name"
+               required
+               minlength="3"
+               placeholder="Enter your name"&gt;
+
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email"
+               id="email"
+               name="email"
+               required&gt;
+
+    &lt;/fieldset&gt;
+
+    &lt;input type="submit" value="Submit"&gt;
+    &lt;input type="reset" value="Clear"&gt;
+
+&lt;/form&gt;
+                                </pre>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+                    <hr>
+
+                    <h3>Example 4 - Expandable Sections</h3>
+                    <p>Below are live examples of the details and summary elements:</p>
+
+                    <!-- details 1 -->
+                    <details>
+                        <summary><b>GitHub Setup Steps</b></summary>
+                        <ol>
+                            <li>Create a GitHub account at github.com</li>
+                            <li>Download and install Git from git-scm.com</li>
+                            <li>Set your username: <code>git config --global user.name "Your Name"</code></li>
+                            <li>Set your email: <code>git config --global user.email "email@example.com"</code></li>
+                            <li>Create a new repository and clone it locally</li>
+                            <li>Add files, commit, and push to GitHub</li>
+                        </ol>
+                    </details>
+
+                    <br>
+
+                    <!-- details 2 -->
+                    <details>
+                        <summary><b>My Assessment Task List</b></summary>
+                        <ul>
+                            <li><b>Task 1:</b> Multi-page portfolio website (4 pages)</li>
+                            <li><b>Task 2:</b> Navigation with image maps and anchor links</li>
+                            <li><b>Task 3:</b> Complex table with nested tables</li>
+                            <li><b>Task 4:</b> Registration form with 14 input types</li>
+                            <li><b>Task 5:</b> Image gallery with figure and picture elements</li>
+                            <li><b>Task 6:</b> Semantic blog with all inline formatting tags</li>
+                            <li><b>Task 7:</b> HTML attributes showcase</li>
+                            <li><b>Task 8:</b> Documentation website (this one!)</li>
+                        </ul>
+                    </details>
+
+                    <br>
+
+                    <!-- details 3 -->
+                    <details>
+                        <summary><b>Beginner Projects I Practiced</b></summary>
+                        <ol>
+                            <li>Personal portfolio website (HTML only)</li>
+                            <li>Student registration form</li>
+                            <li>Grocery website product listing</li>
+                            <li>Personal blog with semantic HTML</li>
+                            <li>Online payment fraud detection project page</li>
+                            <li>Student record management system page</li>
+                        </ol>
+                    </details>
+
+                    <br>
+                    <hr>
+
+                    <p>
+                        Back to: <a href="reference.html">&larr; HTML Reference</a>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        Next: <a href="sitemap.html">Sitemap &rarr;</a>
+                    </p>
+
+                </td>
+
+                <!-- Sidebar -->
+                <td width="30%" valign="top" bgcolor="#f0f4f0">
+
+                    <table width="95%" align="center" border="1" cellpadding="10" bgcolor="#e8f5e9">
+                        <tr>
+                            <td>
+                                <h3>Jump to Example</h3>
+                                <ul>
+                                    <li><a href="#ex-heading">Basic Structure</a></li>
+                                    <li><a href="#ex-heading">Table Example</a></li>
+                                    <li><a href="#ex-heading">Form Example</a></li>
+                                    <li><a href="#ex-heading">Details Example</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <table width="95%" align="center" border="1" cellpadding="10" bgcolor="#fce4ec">
+                        <tr>
+                            <td>
+                                <h3>Other Pages</h3>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="getting-started.html">Getting Started</a></li>
+                                    <li><a href="reference.html">Reference</a></li>
+                                    <li><a href="sitemap.html">Sitemap</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+
+    </main>
+
+    <br>
+    <hr>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo" aria-label="Page footer">
+        <table width="100%" cellpadding="12" bgcolor="#212121">
+            <tr>
+                <td align="center">
+                    <address>
+                        <font color="#a5d6a7">
+                            <a href="mailto:amaresh@paithacs.com"><font color="#80cbc4">amaresh@paithacs.com</font></a>
+                            &nbsp;|&nbsp;
+                            <a href="tel:+917799582309"><font color="#80cbc4">+91 7799582309</font></a><br>
+                        </font>
+                    </address>
+                    <br>
+                    <font color="#9e9e9e" size="2">
+                        &copy; 2026 Chaluvadi Naga Amaresh &nbsp;|&nbsp;
+                        Last updated: <time datetime="2024-05-20">20th May 2024</time>
+                        &nbsp;|&nbsp;
+                        <a href="https://github.com/amaresh" target="_blank"><font color="#80cbc4">GitHub</font></a>
+                        &nbsp;|&nbsp;
+                        <a href="https://www.linkedin.com/in/naga-amaresh-chaluvadi-986539251/" target="_blank"><font color="#80cbc4">LinkedIn</font></a>
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+</html>
